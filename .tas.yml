@@ -1,6 +1,6 @@
 framework: jest
-blocklist:
-  - "./src/newFileTest.test.js##Comparision tests"
+# blocklist:
+#   - "./src/newFileTest.test.js##Comparision tests"
 postMerge:
   pattern: 
     - "./src/*.test.js"
@@ -15,12 +15,9 @@ preMerge:
     GLOAR_VARIABLE: es-ES
     ENGLISHCODE: ${{ secrets.ENGLISHCODE }}
     INTVALUE: ${{ secrets.Int_value }}
-preRun:
-     command:
-        - npm install
 postRun:
      command:
         - node --version
-version: 1.0
-
-
+nodeVersion: 14.17.2
+# smartRun: false
+version: 1.0 
