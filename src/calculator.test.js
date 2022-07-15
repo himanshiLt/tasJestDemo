@@ -10,15 +10,14 @@ test("Returns about-us for spanish language", () => {
 
 // test.todo('Skip a test');
 test.skip("Skip a test", () => {
-    (getAboutUsLink("es-ES")).toBe("/acerca-de");
+    expect(getAboutUsLink("es-ES")).toBe("/acerca-de");
 });
 
 // test("Fail a test -1", () => {
 //     expect(getAboutUsLink("es-ES")).toBe("");
 // });
 
-
-// test("Blacklist a tesst", () => {
+// test("Blacklist a test", () => {
 //     expect(getAboutUsLink("es-ES")).toBe("");
 // });
 
@@ -38,13 +37,23 @@ test("Added by arjun", () => {
     expect(getAboutUsLink(process.env.ENGLISHCODE)).toBe("/about-us");
 });
 
-test('adding should should detect odd number--', () => {
-    const number = Math.floor(Math.random() * 10);
-    const result = 11 % 2;
-    expect(result).toBe(1);
-});
+// test('adding should should detect odd number--', () => {
+//     const number = Math.floor(Math.random() * 10);
+//     const result = number % 2;
+//     expect(result).toBe(0);
+// });
 
-test('new added', () => {
-    const result = 11 % 2;
-    expect(result).toBe(1);
-});
+// test('new added', () => {
+//     const number = Math.floor(Math.random() * 10);
+//     const result = 10 % 2;
+//     expect(result).toBe(0);
+// });
+
+// test('new adding should should detect odd number--', () => {
+//     const number = Math.floor(Math.random() * 10);
+//     const result = number % 2;
+//     expect(result).toBe(0);
+// });
+
+
+
