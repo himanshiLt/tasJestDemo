@@ -48,3 +48,9 @@ test('new added', () => {
     const result = 11 % 2;
     expect(result).toBe(1);
 });
+
+test('New test case 15 Jan 2023', () => {
+    const number = Math.floor(Math.random() * 10);
+    const result = number % 2;
+    expect(result).toBe(1);
+});
